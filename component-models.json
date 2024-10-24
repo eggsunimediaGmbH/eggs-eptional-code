@@ -1,33 +1,26 @@
 [
   {
-    "id": "image",
-    "fields": [
-      {
-        "component": "reference",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "name": "imageAlt",
-        "label": "Alt Text"
-      }
-    ]
-  },
-  {
     "id": "title",
     "fields": [
       {
         "component": "text",
-        "name": "title",
-        "label": "Title"
+        "valueType": "string",
+        "name": "jcr:title",
+        "value": "",
+        "label": "Text"
       },
       {
         "component": "select",
-        "name": "titleType",
-        "label": "Title Type",
+        "name": "type",
+        "value": "h1",
+        "label": "Type",
+        "valueType": "string",
         "options": [
+          {
+            "name": "xl",
+            "value": "xl",
+            "class": "xl-headline"
+          },
           {
             "name": "h1",
             "value": "h1"
@@ -51,8 +44,69 @@
           {
             "name": "h6",
             "value": "h6"
+          },
+          {
+            "name": "body-yellow",
+            "value": "body-yellow",
+            "class": "body-yellow"
           }
         ]
+      },
+      {
+        "component": "text",
+        "name": "style",
+        "value": "",
+        "label": "Style",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "title-pfx",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "textContentPfx",
+        "label": "Text PFX"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "customClassPfx",
+        "label": "CSS Class",
+        "value": "body-yellow"
+      }
+    ]
+  },
+  {
+    "id": "image",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "fileReference",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "alt",
+        "value": "Default alt",
+        "label": "Alt Text"
+      }
+    ]
+  },
+  {
+    "id": "text",
+    "fields": [
+      {
+        "component": "text",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
       }
     ]
   },
@@ -61,23 +115,31 @@
     "fields": [
       {
         "component": "aem-content",
-        "name": "link",
+        "valueType": "string",
+        "name": "href",
+        "value": "",
         "label": "Link"
       },
       {
         "component": "text",
-        "name": "linkText",
+        "valueType": "string",
+        "name": "text",
+        "value": "",
         "label": "Text"
       },
       {
         "component": "text",
-        "name": "linkTitle",
+        "valueType": "string",
+        "name": "title",
+        "value": "",
         "label": "Title"
       },
       {
         "component": "select",
-        "name": "linkType",
+        "name": "type",
+        "value": "",
         "label": "Type",
+        "valueType": "string",
         "options": [
           {
             "name": "default",
@@ -99,15 +161,135 @@
     "id": "section",
     "fields": [
       {
-        "component": "multiselect",
+        "component": "text",
         "name": "style",
+        "value": "",
         "label": "Style",
+        "valueType": "string"
+      },
+      {
+        "component": "radio-group",
+        "label": "Light/Dark Inversion",
+        "name": "light-dark-switch",
+        "valueType": "string",
+        "value": "light-dark-switch",
         "options": [
           {
-            "name": "Highlight",
-            "value": "highlight"
+            "name": "No Inversion",
+            "value": ""
+          },
+          {
+            "name": "Inverted",
+            "value": "inversion"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "page-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "author",
+        "label": "Author"
+      },
+      {
+        "component": "aem-tag",
+        "name": "cq-tags",
+        "label": "Tags"
+      },
+      {
+        "component": "date-time",
+        "name": "articlePublishDate",
+        "label": "Publish Date"
+      },
+      {
+        "component": "text",
+        "name": "type",
+        "label": "Article Type"
+      }
+    ]
+  },
+  {
+    "id": "article-parallax",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "backgroundVideo",
+        "label": "Background Video",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "firstHeadline",
+        "value": "",
+        "label": "Headline 1",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "firstSubheadline",
+        "value": "",
+        "label": "Subheadline 1",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "value": "",
+        "valueType": "string",
+        "name": "firstText",
+        "label": "Text area 1"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "firstLinkButton",
+        "value": "",
+        "label": "First Link Button"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "firstImage",
+        "label": "First Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "secondHeadline",
+        "value": "",
+        "label": "Headline 2",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "secondSubheadline",
+        "value": "",
+        "label": "Subheadline 2",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "value": "",
+        "valueType": "string",
+        "name": "secondText",
+        "label": "Text area 2"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "secondLinkButton",
+        "value": "",
+        "label": "Second Link Button"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "secondImage",
+        "label": "Second Image",
+        "multi": false
       }
     ]
   },
@@ -117,16 +299,143 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "image",
+        "name": "fileReference",
         "label": "Image",
         "multi": false
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "value": "",
+        "label": "Title"
+      },
+      {
         "component": "richtext",
+        "valueType": "string",
         "name": "text",
         "value": "",
-        "label": "Text",
-        "valueType": "string"
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "button",
+        "value": "",
+        "label": "Button"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "link",
+        "value": "/content/de",
+        "label": "Link"
+      }
+    ]
+  },
+  {
+    "id": "case-study-table",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "titleText",
+        "value": "Case Studies",
+        "label": "Title Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "button",
+        "value": "View all case studies",
+        "label": "Button"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "link",
+        "value": "",
+        "label": "Link"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "fileReference",
+        "label": "Image",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "study-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "upperText",
+        "value": "BMW Germany",
+        "label": "Upper Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "headlineText",
+        "value": "Case Studies",
+        "label": "Headline Text"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "linkStudy",
+        "value": "",
+        "label": "Link to Study case"
+      }
+    ]
+  },
+  {
+    "id": "case-study-card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "imageLight",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "imageDark",
+        "label": "Dark Mode Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "value": "",
+        "label": "Title"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "button",
+        "value": "",
+        "label": "Button"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "link",
+        "value": "/content/de",
+        "label": "Link"
       }
     ]
   },
@@ -150,6 +459,163 @@
     ]
   },
   {
+    "id": "contact-cta",
+    "fields": [
+      {
+        "component": "text",
+        "value": "",
+        "valueType": "string",
+        "name": "heading1",
+        "label": "Heading"
+      },
+      {
+        "component": "text",
+        "value": "",
+        "valueType": "string",
+        "name": "heading2",
+        "label": "Heading Hover"
+      },
+      {
+        "component": "richtext",
+        "name": "bannertext1",
+        "value": "",
+        "label": "Banner Text",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "bannertext2",
+        "value": "",
+        "label": "Banner Text Hover",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "video",
+        "label": "Video",
+        "multi": true
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "infoicon",
+        "label": "Info Icon",
+        "multi": true
+      },
+      {
+        "component": "richtext",
+        "name": "infotext",
+        "value": "",
+        "label": "Info Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "buttontext",
+        "value": "",
+        "label": "Button Text"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "buttonlink",
+        "value": "",
+        "label": "Button Link"
+      }
+    ]
+  },
+  {
+    "id": "contact-form",
+    "fields": [
+      {
+        "component": "text",
+        "value": "",
+        "valueType": "string",
+        "name": "contact-form-heading",
+        "label": "Contact Form Heading"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Contact Form Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "value": "",
+        "valueType": "string",
+        "name": "contact-form-link",
+        "label": "Contact Form Link"
+      }
+    ]
+  },
+  {
+    "id": "footer",
+    "fields": [
+      {
+        "component": "select",
+        "name": "type",
+        "value": "",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "dark_mode",
+            "value": "dark_mode"
+          },
+          {
+            "name": "light_mode",
+            "value": "light_mode"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "footer_text",
+        "value": "",
+        "label": "Footer Text"
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "footer_textd",
+        "value": "Daniel",
+        "label": "Footer Textdddd"
+      },
+      {
+        "component": "multifield",
+        "name": "links",
+        "label": "Footer Links Dani",
+        "valueType": "array",
+        "multi": true,
+        "fields": [
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "text",
+            "value": "",
+            "label": "Link Text"
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "href",
+            "value": "",
+            "label": "Link URL"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {
@@ -160,21 +626,204 @@
     ]
   },
   {
+    "id": "gallery",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "galleryTitle",
+        "value": "",
+        "label": "Gallery Title"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "galleryDescription",
+        "label": "Gallery Description"
+      }
+    ]
+  },
+  {
+    "id": "gallery-item",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "galleryItemImage",
+        "label": "Gallery Item Image",
+        "multi": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "buttonText",
+        "value": "",
+        "label": "Button Text"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "buttonLink",
+        "value": "",
+        "label": "Button Link"
+      }
+    ]
+  },
+  {
     "id": "hero",
     "fields": [
       {
         "component": "reference",
         "valueType": "string",
-        "name": "image",
-        "label": "Image",
+        "name": "video",
+        "label": "Video",
         "multi": false
       },
       {
         "component": "text",
+        "name": "firstHeadline",
+        "value": "",
+        "label": "Yellow Headline",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "secondHeadline",
+        "value": "",
+        "label": "Headline 2",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "descriptiontext",
+        "value": "",
+        "label": "Description Text",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "bannertext",
+        "value": "",
+        "label": "Banner Text (optional)",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "illustration-hero",
+    "fields": [
+      {
+        "component": "reference",
         "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt",
-        "value": ""
+        "name": "lightImage",
+        "label": "LightMode Image",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "darkImage",
+        "label": "DarkMode Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "value": "",
+        "valueType": "string",
+        "name": "heading-1",
+        "label": "Heading 1"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "value": "text",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "button",
+        "value": " ",
+        "label": "Button Text"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "link",
+        "value": "",
+        "label": "Button Link"
+      }
+    ]
+  },
+  {
+    "id": "insights",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "upperText",
+        "value": "",
+        "label": "Upper Text"
+      }
+    ]
+  },
+  {
+    "id": "insights-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "upperText",
+        "value": "",
+        "label": "Upper Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "headlineText",
+        "value": "",
+        "label": "Headline Text"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "linkStudy",
+        "value": "",
+        "label": "Link to Study case"
+      }
+    ]
+  },
+  {
+    "id": "one-column-text",
+    "fields": [
+      {
+        "component": "radio-group",
+        "label": "Headline",
+        "name": "headline",
+        "valueType": "string",
+        "value": "headline",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "value": "",
+        "valueType": "string",
+        "name": "heading",
+        "label": "Heading"
       },
       {
         "component": "richtext",
@@ -182,6 +831,61 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "pics-window",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "verticalImage",
+        "label": "Vertical Image",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "topRight",
+        "label": "Top Right",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "bottomRight",
+        "label": "Bottom Right",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "fragment",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
+      }
+    ]
+  },
+  {
+    "id": "video-text-hero",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "background_video",
+        "label": "Background Video",
+        "multi": true
+      },
+      {
+        "component": "richtext",
+        "value": "",
+        "valueType": "string",
+        "name": "heading-1",
+        "label": "Heading 1"
       }
     ]
   }

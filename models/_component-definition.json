@@ -5,16 +5,28 @@
       "id": "default",
       "components": [
         {
-          "...": "./_text.json#/definitions"
+          "...": "./_title.json#/definitions"
         },
         {
-          "...": "./_title.json#/definitions"
+          "...": "./_title-pfx.json#/definitions"
         },
         {
           "...": "./_image.json#/definitions"
         },
         {
+          "...": "./_text.json#/definitions"
+        },
+        {
           "...": "./_button.json#/definitions"
+        },
+        {
+          "...": "./_section.json#/definitions"
+        },
+        {
+          "...": "../src/blocks/*/_*.json#/definitions"
+        },
+        {
+          "...": "../src/blocks/header/header.json#/definitions"
         }
       ]
     },
@@ -32,7 +44,7 @@
       "id": "blocks",
       "components": [
         {
-          "...": "../blocks/*/_*.json#/definitions"
+          "...": "../dist/blocks/*/_*.json#/definitions"
         }
       ]
     }

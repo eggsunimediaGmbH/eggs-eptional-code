@@ -19,13 +19,16 @@
       "fields": [
         {
           "component": "reference",
-          "name": "image",
+          "valueType": "string",
+          "name": "fileReference",
           "label": "Image",
           "multi": false
         },
         {
           "component": "text",
-          "name": "imageAlt",
+          "valueType": "string",
+          "name": "alt",
+          "value": "Default alt",
           "label": "Alt Text"
         }
       ]

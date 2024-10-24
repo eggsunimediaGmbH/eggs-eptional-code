@@ -20,13 +20,26 @@
       "id": "section",
       "fields": [
         {
-          "component": "multiselect",
+          "component": "text",
           "name": "style",
+          "value": "",
           "label": "Style",
+          "valueType": "string"
+        },
+        {
+          "component": "radio-group",
+          "label": "Light/Dark Inversion",
+          "name": "light-dark-switch",
+          "valueType": "string",
+          "value": "light-dark-switch",
           "options": [
             {
-              "name": "Highlight",
-              "value": "highlight"
+              "name": "No Inversion",
+              "value": ""
+            },
+            {
+              "name": "Inverted",
+              "value": "inversion"
             }
           ]
         }
@@ -44,7 +57,24 @@
         "hero",
         "cards",
         "columns",
-        "fragment"
+        "insights",
+        "fragment",
+        "header",
+        "footer",
+        "two-columns-text",
+        "hero",
+        "article-parallax",
+        "one-column-text",
+        "contact-cta",
+        "contact-form",
+        "section",
+        "gallery",
+        "case-study",
+        "video-text-hero",
+        "illustration-hero",
+        "subpage-deck",
+        "case-study-table",
+        "pics-window"
       ]
     }
   ]

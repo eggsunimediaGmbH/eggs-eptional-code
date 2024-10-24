@@ -4,11 +4,11 @@ import {
   decorateButtons,
   decorateIcons,
   decorateSections,
-  loadBlock,
   loadSections,
-} from './aem.js';
+  loadBlock
+} from '../dist/scripts/aem.js';
 import { decorateRichtext } from './editor-support-rte.js';
-import { decorateMain } from './scripts.js';
+import { decorateMain } from '../dist/scripts/scripts.js';
 
 async function applyChanges(event) {
   // redecorate default content and blocks on patches (in the properties rail)
@@ -95,7 +95,6 @@ function attachEventListners(main) {
     'aue:content-add',
     'aue:content-move',
     'aue:content-remove',
-    'aue:content-copy',
   ].forEach((eventType) => main?.addEventListener(eventType, async (event) => {
     event.stopPropagation();
     const applied = await applyChanges(event);
@@ -104,3 +103,4 @@ function attachEventListners(main) {
 }
 
 attachEventListners(document.querySelector('main'));
+

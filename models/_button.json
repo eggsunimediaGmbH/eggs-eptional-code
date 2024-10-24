@@ -21,23 +21,31 @@
       "fields": [
         {
           "component": "aem-content",
-          "name": "link",
+          "valueType": "string",
+          "name": "href",
+          "value": "",
           "label": "Link"
         },
         {
           "component": "text",
-          "name": "linkText",
+          "valueType": "string",
+          "name": "text",
+          "value": "",
           "label": "Text"
         },
         {
           "component": "text",
-          "name": "linkTitle",
+          "valueType": "string",
+          "name": "title",
+          "value": "",
           "label": "Title"
         },
         {
           "component": "select",
-          "name": "linkType",
+          "name": "type",
+          "value": "",
           "label": "Type",
+          "valueType": "string",
           "options": [
             {
               "name": "default",

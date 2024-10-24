@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Page not found</title>
+  <title>💛Hoppla, hier liegt wohl ein eggs im Weg! 💛</title>
   <script type="text/javascript">
     window.isErrorPage = true;
     window.errorCode = '404';
@@ -45,6 +45,22 @@
     main.error .error-number text {
       font-family: monospace;
     }
+
+    main.error .section{
+      padding: 0;
+    }
+
+    main.error h1 {
+      font-size: 8rem;
+      color: #fdbe5f;
+      margin: 0;
+    }
+    @media only screen and (min-width: 900px) {
+      main.error h1 {
+        font-size: 20rem;
+      }
+    }
+
   </style>
   <link rel="stylesheet" href="/styles/lazy-styles.css">
 </head>
@@ -53,12 +69,12 @@
   <header></header>
   <main class="error">
     <div class="section">
-      <svg viewBox="1 0 38 18" class="error-number">
-        <text x="0" y="17">404</text>
-      </svg>
-      <h2 class="error-message">Page Not Found</h2>
+      <h1>404: All Aboard the Missing Ship!</h1>
+      <p>Uh-oh! Looks like you’re lost in the void of the internet. 🚀
+        This page has gone on an unexpected adventure! Let’s get you back on track—try heading to the homepage!
+      </p>
       <p class="button-container">
-        <a href="/" class="button secondary error-button-home">Go home</a>
+        <a href="/" class="button secondary error-button-home">Back to Home</a>
       </p>
     </div>
   </main>

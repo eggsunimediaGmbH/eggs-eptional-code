@@ -15,7 +15,24 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "insights",
+      "fragment",
+      "header",
+      "footer",
+      "two-columns-text",
+      "hero",
+      "article-parallax",
+      "one-column-text",
+      "contact-cta",
+      "contact-form",
+      "section",
+      "gallery",
+      "case-study",
+      "video-text-hero",
+      "illustration-hero",
+      "subpage-deck",
+      "case-study-table",
+      "pics-window"
     ]
   },
   {
@@ -25,18 +42,44 @@
     ]
   },
   {
-    "id": "columns",
+    "id": "case-study-table",
     "components": [
-      "column"
+      "study-item"
+    ]
+  },
+  {
+    "id": "case-study",
+    "components": [
+      "case-study-card"
     ]
   },
   {
     "id": "column",
     "components": [
       "text",
+      "title",
+      "image"
+    ]
+  },
+  {
+    "id": "columns",
+    "components": [
+      "text",
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "gallery",
+    "components": [
+      "gallery-item"
+    ]
+  },
+  {
+    "id": "insights",
+    "components": [
+      "insights-item"
     ]
   }
 ]
