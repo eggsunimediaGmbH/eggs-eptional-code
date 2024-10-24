@@ -1,17 +1,5 @@
-# eggstra poc sandbox 💛 
-Welcome to the Eggs-quisite POC program, where we’re serving up a dynamic, fully deployable version of the Eggs Website! This sandbox-ready site is cracked open specifically for demo purposes, showcasing the latest and greatest in our technology stack. 🐣
-
-We’ve built this project with <strong>EDS (Eggs Delivery Services)</strong> fully integrated, ensuring every pixel is perfectly cooked to deliver a sunny-side-up user experience. 🍳 Whether you're here to demo new features or test the functionality in a risk-free environment, this sandbox lets you scramble through features without breaking anything! 🐥
-
-Key Features:
-
-🥚 Egg-sactly what you need: A fully branded website ready to roll out across multiple environments <br>
-🐣 Built using the best-in-class EDS for seamless design and development<br>
-🍳 Smooth and buttery deployment process onto our sandbox platform<br>
-💛 Demo-ready, for you to hatch new ideas and play around without cracking any shells<br>
-This sandbox deployment is not just a soft-boiled test—it's a hard-boiled solution to showcase everything that makes our Eggs website egg-straordinary! 🎉<br>
-
-Time to see what we've hatched and let your demo dreams take flight! 🐤
+# Your Project's Title...
+Your project's description...
 
 ## Environments
 - Preview: https://main--eggs-eptional-code--eggsunimediaGmbH.aem.page/

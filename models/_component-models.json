@@ -1,12 +1,9 @@
 [
   {
-    "...": "./_title.json#/models"
-  },
-  {
-    "...": "./_title-pfx.json#/models"
-  },
-  {
     "...": "./_image.json#/models"
+  },
+  {
+    "...": "./_title.json#/models"
   },
   {
     "...": "./_text.json#/models"
@@ -18,9 +15,6 @@
     "...": "./_section.json#/models"
   },
   {
-    "...": "./_page.json#/models"
-  },
-  {
-    "...": "../src/blocks/*/_*.json#/models"
+    "...": "../blocks/*/_*.json#/models"
   }
 ]

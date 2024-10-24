@@ -21,23 +21,14 @@
       "fields": [
         {
           "component": "text",
-          "valueType": "string",
-          "name": "jcr:title",
-          "value": "",
-          "label": "Text"
+          "name": "title",
+          "label": "Title"
         },
         {
           "component": "select",
-          "name": "type",
-          "value": "h1",
-          "label": "Type",
-          "valueType": "string",
+          "name": "titleType",
+          "label": "Title Type",
           "options": [
-            {
-              "name": "xl",
-              "value": "xl",
-              "class": "xl-headline"
-            },
             {
               "name": "h1",
               "value": "h1"
@@ -61,20 +52,8 @@
             {
               "name": "h6",
               "value": "h6"
-            },
-            {
-              "name": "body-yellow",
-              "value": "body-yellow",
-              "class": "body-yellow"
             }
           ]
-        },
-        {
-          "component": "text",
-          "name": "style",
-          "value": "",
-          "label": "Style",
-          "valueType": "string"
         }
       ]
     }
