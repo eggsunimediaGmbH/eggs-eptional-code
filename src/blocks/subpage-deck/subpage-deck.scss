@@ -1,0 +1,72 @@
+@import './../../styles/functions';
+
+.section.subpage-deck-container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.subpage-deck {
+
+  &__card-item {
+    border-radius: 32px;
+    padding: 32px 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: sticky;
+    background-color: var(--light);
+
+    &:nth-child(10n+1) {
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      background-color: var(--corporate-accent);
+    }
+    &:nth-child(10n+2) {
+      position: sticky;
+      top: 10vh;
+      height: 90vh;
+    }
+    &:nth-child(10n+3) {
+      position: sticky;
+      top: 20vh;
+      height: 80vh;
+    }
+
+    //always last child, no matter if 2 or 3 cards
+    &:last-child {
+      background-color: var(--lightgrey);
+    }
+  }
+
+  &__card-title {
+    margin: unset;
+  }
+
+  &__card-description{
+    overflow: hidden;
+  }
+
+  &__card-image {
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    img {
+      aspect-ratio: 7/6;
+    }
+  }
+
+  &__card-button {
+    margin-top: auto;
+  }
+
+  &__card-cta {
+    &.primary {
+      float: none !important;
+    }
+  }
+
+}

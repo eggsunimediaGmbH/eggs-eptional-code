@@ -1,0 +1,117 @@
+@import './../../styles/functions';
+
+.pics-window{
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  align-self: stretch;
+
+  @include media-breakpoint-up(desktop){
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0 150px;
+    gap: 36px;
+    max-height: 616px;
+    row-gap: 0;
+
+  }
+
+  &__vertical-container{
+    padding: 18px 0;
+    align-self: stretch;
+
+    @include media-breakpoint-up(desktop){
+      grid-row-start: 1;
+      grid-column-start: 1;
+      grid-row-end: 3;
+      grid-column-end: 2;
+    }
+  }
+
+  &__vertical-image img{
+    border-radius: 0 36px 0 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+
+  &__top-right-container{
+    padding: 18px 0;
+    align-items: flex-end;
+
+    @include media-breakpoint-up(desktop){
+      grid-row-start: 1;
+      grid-column-start: 2;
+      grid-row-end: 2;
+      grid-column-end: 3;
+
+    }
+  }
+
+  &__top-right img{
+    border-radius: 0 0 36px 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+
+  &__bottom-right-container{
+    padding: 18px 0;
+
+    @include media-breakpoint-up(desktop){
+      grid-row-start: 2;
+      grid-column-start: 2;
+      grid-row-end: 3;
+      grid-column-end: 3;
+    }
+
+  }
+
+  &__bottom-right img{
+    border-radius: 0 0 0 36px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+
+  &__vertical-container,
+  &__top-right-container,
+  &__bottom-right-container {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media-breakpoint-up(desktop) {
+      object-fit: cover;
+    }
+  }
+
+  &__vertical-image,
+  &__top-right,
+  &__bottom-right {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &--picture,
+  &--picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.section.pics-window-container{
+  background-color: var(--light);
+
+  &.inverted {
+    background-color: var(--dark);
+  }
+
+}

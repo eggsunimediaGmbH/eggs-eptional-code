@@ -1,0 +1,29 @@
+{
+  "models": [
+    {
+      "id": "page-metadata",
+      "fields": [
+        {
+          "component": "text",
+          "name": "author",
+          "label": "Author"
+        },
+        {
+          "component": "aem-tag",
+          "name": "cq-tags",
+          "label": "Tags"
+        },
+        {
+          "component": "date-time",
+          "name": "articlePublishDate",
+          "label": "Publish Date"
+        },
+        {
+          "component": "text",
+          "name": "type",
+          "label": "Article Type"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "definitions": [
+    {
+      "title": "Subpage Deck",
+      "id": "subpage-deck",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Subpage Deck",
+              "model": "subpage-deck",
+              "filter": "subpage-deck",
+              "card1": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "name": "Card 1",
+                "model": "card"
+              },
+              "card2": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "name": "Card 2",
+                "model": "card"
+              },
+              "card3": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "name": "Card 3 (optional)",
+                "model": "card"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "fragment",
+      "fields": [
+        {
+          "component": "aem-content",
+          "name": "reference",
+          "label": "Reference"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

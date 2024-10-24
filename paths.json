@@ -1,7 +1,7 @@
 {
   "mappings": [
-    "/content/aem-boilerplate/:/",
-    "/content/aem-boilerplate/configuration:/.helix/config.json",
-    "/content/aem-boilerplate/metadata:/metadata.json"
+    "/content/greenship/:/",
+    "/content/greenship/configuration:/.helix/config.json",
+    "/content/greenship/metadata:/metadata.json"
   ]
 }

@@ -1,0 +1,188 @@
+/* stylelint-disable */
+.section.illustration-hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+  padding-top: 9px;
+  overflow-x: hidden;
+}
+@media (min-width: 1024px) {
+  .section.illustration-hero-container {
+    padding: 30px;
+    z-index: 0;
+    height: 100vh;
+    position: fixed;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .illustration-hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.illustration-hero__left-container {
+  width: 100%;
+  gap: 24px;
+}
+@media (min-width: 1024px) {
+  .illustration-hero__left-container {
+    width: 60%;
+  }
+}
+.illustration-hero__right-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  .illustration-hero__right-container {
+    gap: 14px;
+    width: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  .illustration-hero__left-container, .illustration-hero__right-container {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+}
+.illustration-hero__image-wrapper {
+  display: flex;
+  margin-bottom: 16px;
+  width: auto;
+  object-fit: cover;
+}
+@media (min-width: 1024px) {
+  .illustration-hero__image-wrapper {
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .illustration-hero__dark-image-wrapper {
+    display: none;
+  }
+}
+.illustration-hero__image-large {
+  display: flex;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.illustration-hero__image-small {
+  display: flex;
+  width: 80%;
+  margin-bottom: 16px;
+}
+.illustration-hero__image-dark-large {
+  display: none;
+  width: 100%;
+}
+.illustration-hero__image-dark-small {
+  display: none;
+  width: 80%;
+}
+.illustration-hero__headline {
+  font-size: var(--heading-font-size-xl);
+  font-weight: var(--bold-font-weight);
+  line-height: var(--heading-line-height-xl);
+  margin-bottom: 16px;
+}
+@media (min-width: 1024px) {
+  .illustration-hero__headline {
+    font-size: var(--heading-font-size-xxl);
+    margin-bottom: 24px;
+  }
+}
+.illustration-hero__headline--yellow {
+  color: var(--corporate-accent);
+}
+.illustration-hero__description {
+  font-size: var(--heading-font-size-xs);
+  font-weight: var(--light-font-weight);
+  line-height: var(--body-line-height-s);
+  margin-bottom: 16px;
+}
+@media (min-width: 1024px) {
+  .illustration-hero__description {
+    margin-bottom: 24px;
+  }
+}
+
+.highlight-yellow {
+  color: var(--corporate-accent) !important;
+}
+
+.inverted .illustration-hero__headline {
+  color: var(--light);
+  font-size: var(--heading-font-size-xxl);
+}
+.inverted .illustration-hero__description {
+  color: var(--light);
+}
+.inverted .illustration-hero__image-wrapper {
+  display: none;
+}
+.inverted .illustration-hero__dark-image-wrapper {
+  display: flex;
+}
+.inverted .illustration-hero__image-large {
+  display: none;
+  position: relative;
+}
+.inverted .illustration-hero__image-small {
+  display: none;
+  position: relative;
+}
+.inverted .illustration-hero__image-dark-large {
+  display: flex;
+}
+.inverted .illustration-hero__image-dark-small {
+  display: flex;
+}
+.inverted a.illustration-hero__button.button.secondary {
+  background-color: var(--lightgrey);
+  border: 1px solid var(--light);
+  color: var(--dark);
+}
+
+.dark-mode .illustration-hero__headline {
+  color: var(--dark);
+}
+.dark-mode .illustration-hero__description {
+  color: var(--dark);
+}
+.dark-mode .illustration-hero__image-wrapper {
+  display: none;
+}
+.dark-mode .illustration-hero__dark-image-wrapper {
+  display: flex;
+}
+.dark-mode .illustration-hero__image-large {
+  display: none;
+  position: relative;
+}
+.dark-mode .illustration-hero__image-small {
+  display: none;
+  position: relative;
+}
+.dark-mode .illustration-hero__image-dark-large {
+  display: flex;
+}
+.dark-mode .illustration-hero__image-dark-small {
+  display: flex;
+}
+.dark-mode a.illustration-hero__button.button.secondary {
+  background-color: var(--lightgrey);
+  border: 1px solid var(--light);
+  color: var(--light);
+}

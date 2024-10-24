@@ -1,0 +1,91 @@
+{
+  "definitions": [
+    {
+      "title": "Case Study",
+      "id": "case-study",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Case Study",
+              "filter": "case-study"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Case Study Card",
+      "id": "case-study-card",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Case Study Card",
+              "model": "case-study-card"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "case-study-card",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "imageLight",
+          "label": "Image",
+          "multi": false
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "imageDark",
+          "label": "Dark Mode Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "title",
+          "value": "",
+          "label": "Title"
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "text",
+          "value": "",
+          "label": "Text"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "button",
+          "value": "",
+          "label": "Button"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "link",
+          "value": "/content/de",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "case-study",
+      "components": [
+        "case-study-card"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "definitions": [
+    {
+      "title": "Case Study Table",
+      "id": "case-study-table",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Case Study Table",
+              "model": "case-study-table",
+              "filter": "case-study-table"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Study Item",
+      "id": "study-item",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Study Item",
+              "model": "study-item"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "case-study-table",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "titleText",
+          "value": "Case Studies",
+          "label": "Title Text"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "button",
+          "value": "View all case studies",
+          "label": "Button"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "link",
+          "value": "",
+          "label": "Link"
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "fileReference",
+          "label": "Image",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "study-item",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "upperText",
+          "value": "BMW Germany",
+          "label": "Upper Text"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "headlineText",
+          "value": "Case Studies",
+          "label": "Headline Text"
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "linkStudy",
+          "value": "",
+          "label": "Link to Study case"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "case-study-table",
+      "components": [
+        "study-item"
+      ]
+    }
+  ]
+}

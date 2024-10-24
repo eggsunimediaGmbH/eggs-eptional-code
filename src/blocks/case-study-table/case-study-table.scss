@@ -1,0 +1,129 @@
+@import './../../styles/functions';
+
+:root{
+  --case-study-table-margin-items : 40px;
+}
+
+
+
+.case-study-table{
+  &-wrapper{
+    max-width: none !important;
+  }
+  &__left-container{
+    width: 100%;
+    @include media-breakpoint-up(desktop){
+      width: 70%;
+    }
+  }
+  &__right-container{
+    display: none;
+    @include media-breakpoint-up(desktop){
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: end;
+      width: 30%;
+
+      .case-study-table__picture{
+        display: flex;
+      }
+      .case-study-table__button{
+        width: fit-content;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(desktop){
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5%;
+  }
+  &__button{
+    font-size: 1em;
+  }
+
+  &__items-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--case-study-table-margin-items);
+  }
+
+  &__link-wrapper{
+    border-bottom: 2px solid var(--dark);
+    padding: 8px;
+    transition: ease-in 0.3s;
+    &:last-child{
+      margin-bottom: 25px;
+    }
+    &:hover {
+      background-color: var(--corporate-accent);
+      color: var(--dark);
+      text-decoration: none;
+      a {
+        color: var(--dark); // Target the 'a' inside directly on hover
+      }
+    }
+    &--title-item{
+      margin: 0;
+    }
+    &--upper-text{
+      margin-bottom: 4px;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: var(--dark);
+      @include media-breakpoint-up(desktop){
+        min-width: 125px;
+        max-width: 170px;
+      }
+    }
+    @include media-breakpoint-up(desktop){
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      .case-study-table--upper-text{
+        width: unset;
+      }
+      p,h4{
+        margin: 0;
+        color: var(--dark);
+        &:hover{
+          color: var(--dark);
+        }
+      }
+      p{
+        margin-right: 14px;
+      }
+    }
+  }
+  &__picture{
+    display: none;
+    @include media-breakpoint-up(desktop){
+      display: flex;
+      margin-top: var(--case-study-table-margin-items);
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative; // Ensure it behaves properly in layout
+      width: 100%; // Make sure it takes full width
+      height: 100%; // Ensure the height fills its container
+
+      img {
+        width: 100%; // Ensures the image stretches to full width of the container
+        height: 100%; // Ensures the image stretches to full height of the container
+        object-fit: cover; // This makes the image behave like a background cover
+        object-position: center; // Optionally, center the image if needed
+      }
+    }
+  }
+  &__title{
+    margin: 0;
+    padding-bottom: 10px;
+    color: var(--dark);
+  }
+
+}

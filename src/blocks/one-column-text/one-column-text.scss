@@ -1,0 +1,114 @@
+@import './../../styles/functions';
+
+.one-column-text-wrapper {
+  margin: auto;
+  padding: 36px 0;
+  background-color: var(--light);
+
+  @include media-breakpoint-up(desktop) {
+    padding: 0;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+
+    &.fade-in {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .one-column-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+    background-color: var(--light);
+
+    &__heading {
+      font-weight: var(--light-font-weight);
+      font-size: var(--heading-font-size-xl);
+      line-height: var(--heading-line-height-xl);
+      color: var(--dark);
+      margin: 0;
+
+      @include media-breakpoint-up(desktop) {
+        align-self: stretch;
+        align-content: center;
+      }
+    }
+
+    &__text {
+      font-weight: var(--light-font-weight);
+      font-size: var(--body-font-size-s);
+      line-height: var(--body-line-height-s);
+      color: var(--dark);
+
+      @include media-breakpoint-up(desktop) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 32px;
+        align-self: stretch;
+      }
+    }
+  }
+}
+
+
+.section {
+  &.one-column-text-container {
+    display: flex;
+    background-color: var(--light);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    padding: 32px 16px 64px 16px;
+    gap: 10px;
+
+    @include media-breakpoint-up(desktop) {
+      padding: 128px 384px;
+      gap: 10px;
+      z-index: 1;
+    }
+
+    &--standard-hero {
+      @include media-breakpoint-up(desktop) {
+        margin-top: 100vh;
+      }
+    }
+  }
+}
+
+// Universal Editor
+body.editor-mode {
+  .one-column-text-container {
+    margin-top: 0;
+
+    .one-column-text-wrapper {
+      opacity: 1;
+      transform: unset;
+      transition: unset;
+      transition-delay: 0s;
+    }
+  }
+}
+
+// Inverted styling
+.inverted {
+  .section .one-column-text-container {
+    background-color: var(--dark);
+  }
+
+  .one-column-text__heading {
+    color: var(--light);
+  }
+
+  .one-column-text__text {
+    color: var(--light);
+  }
+}
+

@@ -1,0 +1,38 @@
+{
+  "definitions": [
+    {
+      "title": "Title PFX2",
+      "id": "title-pfx",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/title/v1/title",
+            "template": {
+              "model": "title-pfx"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "title-pfx",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "textContentPfx",
+          "label": "Text PFX"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "customClassPfx",
+          "label": "CSS Class",
+          "value": "body-yellow"
+        }
+      ]
+    }
+  ]
+}

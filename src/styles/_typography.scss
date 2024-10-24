@@ -1,0 +1,21 @@
+
+
+@mixin navigation-headline-mobile{
+  font-family: "TWKBurns-Light", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 300;
+}
+
+@mixin nav-placeholder{
+  font-family: "TWKBurns-Light", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+@mixin get-touch{
+  font-family: "TWKBurns-Light", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+}

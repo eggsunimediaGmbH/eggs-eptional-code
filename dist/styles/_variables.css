@@ -1,0 +1,133 @@
+:root {
+  /* colors */
+  --link-color: #35333A;
+  --link-hover-color: #FEC626;
+  --background-color-light: #FFFFFF;
+  --background-color-dark: #35333A;
+  --background-color-dark-transparent: rgba(0, 0, 0, 0.5);
+  --text-color: #35333A;
+  --black: #000;
+  --eggs-color-y: #FEC626;
+  --eggs-color-k1: #35333A;
+  --eggs-color-k2: #BEBEBE;
+  --eggs-color-k3: #EFECEC;
+  --eggs-color-w: #FFFFFF;
+  --corporate-accent: var(--eggs-color-y);
+  --corporate-darker: var(--eggs-color-k1);
+  --corporate-light: var(--eggs-color-k2);
+  --corporate-lighter: var(--eggs-color-k3);
+  --corporate-lightest: var(--eggs-color-w);
+  /* light mode */
+  --lightmode-yellow: #FEC626;
+  --lightmode-dark: #35333A;
+  --lightmode-light: #FFFFFF;
+  --lightmode-brandgrey: #BEBEBE;
+  --lightmode-lightgrey: #EFECEC;
+  --basic-yellow: #FEC626;
+  --dark: #35333A;
+  --light: #FFFFFF;
+  --brandgrey: #BEBEBE;
+  --lightgrey: #EFECEC;
+  --grayish: #CCCCCC;
+  --yellow-black: #FEC626;
+  --gray: var(--corporate-darker);
+  /* Icons colors */
+  --light-icon: none;
+  --black-icon: invert(100%) brightness(150%);
+  --inverted-icon: invert(100%) brightness(150%);
+  --yellow-icon: invert(92%) sepia(11%) saturate(4115%) hue-rotate(335deg) brightness(101%) contrast(99%);
+  /* masked image accent color fade */
+  --image-fade-color: #fed119;
+  --overlay-color: rgba(var(--corporate-accent-rgba), 0.9);
+  --transparent-background: rgba(var(--corporate-darkest-rgba), 0.5);
+  /* color schemes */
+  --colorschemes: light, dark, accent;
+  /* fonts */
+  --body-font-family: "TWKBurns-Light", TWKBurns-fallback;
+  --body-strong-font-family: "TWKBurns-Medium", TWKBurns-fallback;
+  --heading-font-family: "TWKBurns-Bold", TWKBurns-fallback;
+  --fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono", monospace;
+  /* body sizes */
+  --body-font-size-m: 22px;
+  --body-font-size-s: 18px;
+  --body-font-size-xs: 16px;
+  /* heading sizes */
+  --heading-font-size-xxxl: 128px;
+  --heading-font-size-3xl: 150px;
+  --heading-font-size-xxl: 64px;
+  --heading-font-size-xll: 56.74px;
+  --heading-font-size-xl: 48px;
+  --heading-font-size-l: 40px;
+  --heading-font-size-m: 36px;
+  --heading-font-size-s: 20px;
+  --heading-font-size-xs: 18px;
+  /* body line heights */
+  --body-line-height-m: 30px;
+  --body-line-height-s: 28.8px;
+  --body-line-height-xs: 25.6px;
+  --body-line-height-xxs: 22.4px;
+  /* heading line heights */
+  --heading-line-height-5xl: 250px;
+  --heading-line-height-4xl: 200px;
+  --heading-line-height-3xl: 150px;
+  --heading-line-height-xxxl: 132px;
+  --heading-line-height-xxl: 76.8px;
+  --heading-line-height-xll: 68px;
+  --heading-line-height-xl: 57.6px;
+  --heading-line-height-l: 48px;
+  --heading-line-height-m: 43.2px;
+  --heading-line-height-s: 24px;
+  --heading-mobile-line-height-s: 25.2px;
+  --heading-mobile-line-height-xxxl: 84.48px;
+  --heading-line-height-banner: 28px;
+  /* font weights */
+  --light-font-weight: 300;
+  --medium-font-weight: 500;
+  --bold-font-weight: 700;
+  /* nav height */
+  --nav-height: 64px;
+  /* Header */
+  --header-height: 45rem;
+  --headerbar-height: 5rem;
+  --headerbar-nav-opacity: .95;
+  --hero-teaser-height: 45rem;
+  /* height of the logo */
+  --logo-height: 3rem;
+  /* Font sizes */
+  --base-font-size: 22px;
+  --medium-font-size: 28px;
+  --large-font-size: 34px;
+  --xlarge-font-size: 40px;
+  /* Z-Index */
+  --arrow-z-index: 98;
+  --top-z-index: 100;
+  --max-z-index: 9999;
+  --sticky-z-index: 99;
+  --button-z-index: 1000;
+  --carousel-z-index: 99;
+  /* --- BREAKPOINTS ------------------------------------------------------------ */
+  --small-min: 601px;
+  --medium-min: 769px;
+  --large-min: 1024px;
+  --xlarge-min: 1440px;
+  --fhd-min: 1920px;
+  --qhd-min: 2560px;
+}
+:root .dark-mode {
+  /* colors */
+  --basic-yellow: #FEC626;
+  --dark: #FFFFFF;
+  --light: #35333A;
+  --brandgrey: #BEBEBE;
+  --lightgrey: #EFECEC;
+  --grayish: gray;
+  --yellow-black: #35333A;
+  --gray: var(--eggs-color-k2);
+  /* Icons colors */
+  --light-icon: brightness(20%) hue-rotate(180deg);
+  --black-icon: none;
+  --yellow-icon: none;
+}
+:root .inverted {
+  --inverted-icon: none;
+}

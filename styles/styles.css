@@ -76,8 +76,8 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--body-font-family);
-  font-size: var(--body-font-size-m);
-  line-height: 1.6;
+  font-size: 1.6rem;
+  line-height: 130%;
 }
 
 body.appear {

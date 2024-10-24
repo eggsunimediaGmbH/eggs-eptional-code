@@ -1,0 +1,122 @@
+@import './../../styles/functions';
+
+.cards > ul > li {
+  gap: 36px;
+}
+.section > div {
+  max-width: 1368px;
+}
+
+body.dark-mode .case-study__card-image--dark {
+  display: flex;
+}
+
+body.dark-mode .case-study__card-image {
+  display: none;
+}
+
+.case-study {
+  &-wrapper {
+    display: block;
+    margin : auto;
+  }
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 5%;
+  @include media-breakpoint-up(desktop) {
+    display: flex;
+    column-gap: 5%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__row{
+    flex-direction: column;
+    @include media-breakpoint-up(desktop) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &__card-container {
+    padding: 5%;
+    max-width: 400px;
+    display: block;
+    margin: 5% auto;
+    height: 100%;
+
+    @include media-breakpoint-up(desktop) {
+      padding: 1rem;
+      max-width: 400px;
+      margin: 5rem auto;
+    }
+  }
+  &__cards-row {
+    list-style: none;
+    margin: 30px 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+    grid-gap: 36px;
+  }
+  &__card-image, &__card-image--dark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    align-self: stretch;
+    height: 300px;
+    img{
+      width: 100%;
+      max-width: 235px;
+    }
+  }
+  &__card-image--dark {
+    display: none;
+  }
+
+  &__card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 24px;
+  }
+
+  &__card-title {
+    color: var(--dark);
+    font-size: var(--heading-font-size-m);
+    font-weight: var(--bold-font-weight);
+    line-height: var(--heading-line-height-m);
+  }
+
+  &__card-description {
+    color: var(--dark);
+    font-size: var(--body-font-size-s);
+    font-weight: var(--light-font-weight);
+    line-height: var(--body-line-height-s);
+  }
+
+  &__card-cta {
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
+  }
+}
+
+.section {
+  &.case-study-container {
+    &.inverted {
+      background-color: var(--dark);
+
+      .caseStudy {
+        background-color: var(--light);
+
+        &__card-body,
+        &__card-title,
+        &__card-description {
+          color: var(--dark);
+        }
+      }
+    }
+  }
+}

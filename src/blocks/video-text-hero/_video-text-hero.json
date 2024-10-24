@@ -1,0 +1,41 @@
+{
+  "definitions": [
+    {
+      "title": "Video Text Hero",
+      "id": "video-text-hero",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Video Text Hero",
+              "model": "video-text-hero"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "video-text-hero",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "background_video",
+          "label": "Background Video",
+          "multi": true
+        },
+        {
+          "component": "richtext",
+          "value": "",
+          "valueType": "string",
+          "name": "heading-1",
+          "label": "Heading 1"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

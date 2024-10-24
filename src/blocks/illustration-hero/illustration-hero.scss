@@ -1,0 +1,221 @@
+@import './../../styles/functions';
+
+.section.illustration-hero-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      align-self: stretch;
+      padding-top: 9px;
+      overflow-x: hidden;
+
+  @include media-breakpoint-up(desktop) {
+        padding: 30px;
+        z-index: 0;
+        height: 100vh;
+        position: fixed;
+        overflow-x: hidden;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+}
+
+  .illustration-hero {
+
+    @include media-breakpoint-up(desktop) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__left-container {
+      width: 100%;
+      gap: 24px;
+
+      @include media-breakpoint-up(desktop) {
+        width: 60%;
+      }
+    }
+
+    &__right-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include media-breakpoint-up(desktop) {
+        gap: 14px;
+        width: 40%;
+
+      }
+    }
+
+    &__left-container, &__right-container {
+
+      @include media-breakpoint-up(desktop) {
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+      }
+    }
+
+    &__image-wrapper {
+      display: flex;
+      margin-bottom: 16px;
+      width: auto;
+      object-fit: cover;
+
+      @include media-breakpoint-up(desktop) {
+        margin-bottom: 24px;
+      }
+    }
+
+    &__dark-image-wrapper {
+      @include media-breakpoint-up(desktop) {
+        display: none;
+      }
+    }
+
+    &__image-large {
+      display: flex;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    &__image-small {
+      display: flex;
+      width: 80%;
+      margin-bottom: 16px;
+    }
+
+    &__image-dark-large {
+      display: none;
+      width: 100%;
+    }
+
+    &__image-dark-small {
+      display: none;
+      width: 80%;
+    }
+
+    &__headline {
+      font-size: var(--heading-font-size-xl);
+      font-weight: var(--bold-font-weight);
+      line-height: var(--heading-line-height-xl);
+      margin-bottom: 16px;
+
+      @include media-breakpoint-up(desktop) {
+        font-size: var(--heading-font-size-xxl);
+        margin-bottom: 24px;
+
+      }
+      &--yellow{
+        color: var(--corporate-accent);
+      }
+
+    }
+    &__description {
+      font-size: var(--heading-font-size-xs);
+      font-weight: var(--light-font-weight);
+      line-height: var(--body-line-height-s);
+      margin-bottom: 16px;
+
+
+      @include media-breakpoint-up(desktop) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .highlight-yellow{
+    color: var(--corporate-accent) !important;
+  }
+
+.inverted {
+  .illustration-hero {
+
+    &__headline {
+      color: var(--light);
+      font-size: var(--heading-font-size-xxl);
+    }
+
+    &__description {
+      color: var(--light);
+    }
+
+    &__image-wrapper{
+      display: none;
+    }
+    &__dark-image-wrapper{
+      display: flex;
+    }
+
+    &__image-large{
+      display: none;
+      position: relative;
+    }
+
+    &__image-small{
+      display: none;
+      position: relative;
+    }
+
+    &__image-dark-large {
+      display: flex;
+    }
+
+    &__image-dark-small{
+      display: flex;
+    }
+  }
+  a.illustration-hero__button.button.secondary {
+    background-color: var(--lightgrey);
+    border: 1px solid var(--light);
+    color: var(--dark);
+  }
+}
+
+.dark-mode{
+  .illustration-hero {
+
+    &__headline {
+      color: var(--dark);
+    }
+
+    &__description {
+      color: var(--dark);
+    }
+
+    &__image-wrapper{
+      display: none;
+    }
+    &__dark-image-wrapper{
+      display: flex;
+    }
+    &__image-large{
+      display: none;
+      position: relative;
+    }
+
+    &__image-small{
+      display: none;
+      position: relative;
+    }
+
+    &__image-dark-large {
+      display: flex;
+    }
+
+    &__image-dark-small{
+      display: flex;
+    }
+  }
+
+  a.illustration-hero__button.button.secondary {
+    background-color: var(--lightgrey);
+    border: 1px solid var(--light);
+    color: var(--light);
+  }
+}

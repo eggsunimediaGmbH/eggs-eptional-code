@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Page not found</title>
+  <title>🛳️ 404 🌊</title>
   <script type="text/javascript">
     window.isErrorPage = true;
     window.errorCode = '404';
@@ -45,24 +45,49 @@
     main.error .error-number text {
       font-family: monospace;
     }
+
+    main.error .section{
+      padding: 0;
+    }
+
+    main.error h1 {
+      font-size: 2rem;
+      color: #7eda28;
+      margin: 0;
+    }
+    @media only screen and (min-width: 900px) {
+      main.error h1 {
+        font-size: 4rem;
+      }
+    }
+
   </style>
   <link rel="stylesheet" href="/styles/lazy-styles.css">
 </head>
 
 <body>
-  <header></header>
-  <main class="error">
-    <div class="section">
-      <svg viewBox="1 0 38 18" class="error-number">
-        <text x="0" y="17">404</text>
-      </svg>
-      <h2 class="error-message">Page Not Found</h2>
-      <p class="button-container">
-        <a href="/" class="button secondary error-button-home">Go home</a>
-      </p>
-    </div>
-  </main>
-  <footer></footer>
+<header></header>
+<main class="error">
+  <div class="section">
+    <h1>404: All Aboard the Missing Ship!</h1>
+    <p>
+      <br>Ahoy, Navigator! 🚢 <br><br>
+      It seems you've sailed into uncharted waters. <br><br>
+      The page you're looking for is like a lighthouse that’s gone dim—completely lost at sea!
+
+      <br>But fear not, our ship is still sailing smoothly.<br>
+
+
+      While this particular treasure may have slipped through the cracks, you can always navigate back to the safety of our homepage or explore our other ports of call.
+      <br><br>
+      Let’s get you back on course! 🗺️
+    </p>
+    <p class="button-container">
+      <a href="/" class="button secondary error-button-home">Back to Home</a>
+    </p>
+  </div>
+</main>
+<footer></footer>
 </body>
 
 </html>
