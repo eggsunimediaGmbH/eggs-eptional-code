@@ -104,12 +104,16 @@
         "label": "Style",
         "options": [
           {
-            "name": "Essential",
-            "value": "essential"
+            "name": "Cards",
+            "value": "cards"
           },
           {
-            "name": "Highlight",
-            "value": "highlight"
+            "name": "Green Background",
+            "value": "changeBackgroundFake"
+          },
+          {
+            "name": "Steps",
+            "value": "steps"
           }
         ]
       }
