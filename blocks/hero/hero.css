@@ -4,7 +4,7 @@
 }
 
 .hero-container {
-    height: 750px;
+    height: 725px;
 }
 
 .hero {
@@ -189,4 +189,67 @@
 
 .columns-2-cols > div > div .button-container {
 margin-left: 250px; /*der entwickler hat riesen Ahnung von css ;) sory...*/
+}
+
+.cards .columns-wrapper {
+    border-top: 0px solid #95cc3a;
+    border-bottom: 0px solid #95cc3a;
+    align-items: flex-start;
+}
+.cards .columns-wrapper > div > div > div{
+    border: 1px solid #95cc3a;
+    padding: 5px 18px;
+}
+
+.cards h3 {
+    margin-top: 0.3em;
+}
+
+.steps .columns-wrapper > div > div > div:nth-child(2){
+    margin-top: 50px;
+}
+
+.steps .columns-wrapper > div > div > div:nth-child(3){
+    margin-top: 100px;
+    position: relative;
+}
+
+.steps .columns > div {
+    align-items: flex-start;
+}
+
+.steps .columns-wrapper::before {
+    display: none;
+}
+
+.steps .columns-wrapper > div > div > div:nth-child(3)::before {
+    content: "";
+    display: block;
+    width: 503px;
+    height: 401px;
+    background-image: url(../../icons/breznsoiza.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -280px;
+    left: 71px;
+    transform: scale(0.17);
+}
+
+.cards .columns-wrapper > div > div > div{
+    position: relative;
+}
+
+.cards .columns-wrapper > div > div > div::after{
+    content: "";
+    display: block;
+    width: 503px;
+    height: 576px;
+    background-image: url(../../icons/brieftraegerOderWas.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -280px;
+    left: -252px;
+    transform: scale(0.07);
 }
