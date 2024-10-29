@@ -16,7 +16,7 @@ header nav {
   gap: 0 24px;
   margin: auto;
   max-width: 1248px;
-  height: var(--nav-height);
+  height: 85px;
   padding: 0 24px;
   font-family: var(--body-font-family);
 }
@@ -142,10 +142,13 @@ header .nav-brand {
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
+    .default-content-wrapper {
+        display: none;
+    }
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 82px;
   height: auto;
 }
 
@@ -222,7 +225,15 @@ header nav .nav-sections ul > li > ul > li {
     display: flex;
     gap: 24px;
     margin: 0;
+      font-size: 25px;
+      justify-content: flex-end;
+      margin-right: 33px;
   }
+
+    header nav .nav-sections ul li:hover {
+        cursor: pointer;
+        color: #95cc3a;
+    }
 
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
@@ -265,4 +276,9 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+.nav-tools .icon-search{
+    height: 39px;
+    width: 40px;
 }

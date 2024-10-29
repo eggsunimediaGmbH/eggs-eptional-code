@@ -7,7 +7,7 @@
   --background-color-light: #FFFFFF;
   --background-color-dark: #35333A;
   --background-color-dark-transparent: rgba(0, 0, 0, 0.5);
-  --text-color: #35333A;
+  --text-color: #5d5d5d;
   --black: #000;
   --eggs-color-y: #FEC626;
   --eggs-color-k1: #35333A;
@@ -72,9 +72,9 @@
   --colorschemes: light, dark, accent;
 
   /* fonts */
-  --body-font-family: 'TWKBurns-Light', TWKBurns-fallback;
+  --body-font-family: 'greenship', TWKBurns-fallback;
   --body-strong-font-family: "TWKBurns-Medium", TWKBurns-fallback;
-  --heading-font-family: 'TWKBurns-Bold', TWKBurns-fallback;
+  --heading-font-family: 'greenship', TWKBurns-fallback;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */

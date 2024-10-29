@@ -51,7 +51,7 @@ body {
   margin: 0;
   font-family: var(--body-font-family);
   line-height: var(--body-line-height-s);
-  color: var(--text-color);
+  color: #5d5d5d;
   display: none;
   background-color: var(--light);
 
@@ -365,4 +365,6 @@ main .section.highlight {
 .s7videoviewer.s7mouseinput .s7socialshare .s7socialbutton[state='up'] {
   height: 0 !important;
 }
+
+
 

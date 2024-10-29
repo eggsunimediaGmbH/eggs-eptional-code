@@ -146,6 +146,7 @@ function moveDefaultContentWrapper(direction:string): void {
     if (defaultContentWrapper && heroLeftContainer) {
         heroLeftContainer.appendChild(defaultContentWrapper);
     }
+
 }
 
 function setupBannerContainer(bannerContainer: HTMLElement, isMobile: boolean): void {

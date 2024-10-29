@@ -43,10 +43,10 @@
   /* color schemes */
   --colorschemes: light, dark, accent;
   /* fonts */
-  --body-font-family: "TWKBurns-Light", TWKBurns-fallback;
-  --body-strong-font-family: "TWKBurns-Medium", TWKBurns-fallback;
-  --heading-font-family: "TWKBurns-Bold", TWKBurns-fallback;
-  --fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono", monospace;
+  --body-font-family: "greenship", TWKBurns-fallback;
+  --body-strong-font-family: "greenship", TWKBurns-fallback;
+  --heading-font-family: "greenship", TWKBurns-fallback;
+  --fixed-font-family: "greenship", menlo, consolas, "Liberation Mono", monospace;
   /* body sizes */
   --body-font-size-m: 22px;
   --body-font-size-s: 18px;

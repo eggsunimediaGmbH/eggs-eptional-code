@@ -126,6 +126,15 @@ export default async function decorate(block) {
   });
 
   const navBrand = nav.querySelector('.nav-brand');
+
+  const logoE = document.createElement('img');
+  logoE.classList.add('logo');
+  logoE.src ='/icons/logo.png';
+  logoE.classList.add('logo');
+
+  navBrand.append(logoE);
+
+
   const brandLink = navBrand.querySelector('.button');
   if (brandLink) {
     brandLink.className = '';
@@ -144,6 +153,25 @@ export default async function decorate(block) {
         }
       });
     });
+
+
+    const zefix = document.querySelector('h1');
+
+    const Schlawiner = document.createElement('div');
+    Schlawiner.classList.add('Schlawiner');
+
+    const Gschmarri = document.createElement('img');
+    Gschmarri.classList.add('Gschmarri');
+    Gschmarri.src ='../icons/brieftraegerOderWas.png';
+    Gschmarri.classList.add('logo');
+
+    const Schmarrn = document.createElement('h3');
+    Schmarrn.classList.add('Grantler');
+    Schmarrn.textContent ='Ein neues Kapitel in der Schifffahrt aufschlagen';
+
+    Schlawiner.append(Gschmarri);
+    Schlawiner.append(Schmarrn);
+    zefix.insertAdjacentElement('afterend', Schlawiner);
   }
 
   // hamburger for mobile
