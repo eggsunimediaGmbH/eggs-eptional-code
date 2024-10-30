@@ -129,7 +129,7 @@ export default async function decorate(block) {
 
   const logoE = document.createElement('img');
   logoE.classList.add('logo');
-  logoE.src ='author-p83057-e1369073.adobeaemcloud.com/content/greenship.resource/icons/logo.png';
+  logoE.src ='/content/greenship.resource/icons/logo.png';
   logoE.classList.add('logo');
 
   navBrand.append(logoE);
@@ -162,7 +162,7 @@ export default async function decorate(block) {
 
     const Gschmarri = document.createElement('img');
     Gschmarri.classList.add('Gschmarri');
-    Gschmarri.src ='author-p83057-e1369073.adobeaemcloud.com/content/greenship.resource/icons/brieftraegerOderWas.png';
+    Gschmarri.src ='/content/greenship.resource/icons/brieftraegerOderWas.png';
     Gschmarri.classList.add('logo');
 
     const Schmarrn = document.createElement('h3');
