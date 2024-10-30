@@ -262,5 +262,25 @@
         "label": "Reference"
       }
     ]
+  },
+  {
+    "id": "teaser",
+    "fields": [
+      {
+        "component": "teaser",
+        "name": "teaser",
+        "label": "teaser"
+      }
+    ]
+  },
+  {
+    "id": "highlight",
+    "fields": [
+      {
+        "component": "highlight",
+        "name": "highlight",
+        "label": "highlight"
+      }
+    ]
   }
 ]
