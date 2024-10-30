@@ -282,3 +282,33 @@ header nav .nav-tools {
     height: 39px;
     width: 40px;
 }
+
+.cards.block li:nth-child(2),
+.cards.block li:nth-child(4){
+    background-color: #95cc3a;
+    color: white;
+}
+
+.cards.block li{
+    border-radius: 0 0 12px 12px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0 0 12px 12px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.cards.block li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 36px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" d="M0,160L48,149.3C96,139,192,117,288,106.7C384,96,480,96,576,106.7C672,117,768,139,864,154.7C960,171,1056,181,1152,186.7C1248,192,1344,192,1392,192L1440,192V320H0Z"></path></svg>') no-repeat;
+    background-size: cover;
+    z-index: 99999999999; /* scherz, ich hoff ohnehin den code muss nie jemand lesen ;) */
+}
