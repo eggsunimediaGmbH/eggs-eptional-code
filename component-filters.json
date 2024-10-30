@@ -36,7 +36,13 @@
       "text",
       "image",
       "button",
-      "title"
+      "title",
+      "accordion",
+      "rating",
+      "form",
+      "slider",
+      "socialshare",
+      "quote"
     ]
   }
 ]

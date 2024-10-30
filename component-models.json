@@ -193,19 +193,28 @@
       }
     ]
   },
-
   {
-    "id": "accordion",
+    "id": "quote",
     "fields": [
       {
-        "component": "aem-content",
-        "name": "reference",
-        "label": "Reference"
+        "component": "richtext",
+        "name": "quote",
+        "value": "",
+        "label": "Quote",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "author",
+        "label": "Author",
+        "value": ""
       }
     ]
   },
+
   {
-    "id": "form",
+    "id": "accordion",
     "fields": [
       {
         "component": "aem-content",
