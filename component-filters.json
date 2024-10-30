@@ -23,7 +23,8 @@
       "socialshare",
       "quote",
       "tooltip",
-      "highlight"
+      "highlight",
+      "teaser"
     ]
   },
   {
@@ -51,7 +52,9 @@
       "slider",
       "socialshare",
       "quote",
-      "tooltip"
+      "tooltip",
+      "highlight",
+      "teaser"
     ]
   }
 ]
